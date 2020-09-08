@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: .
-    image: makevoid/notify-slack
+    image: appliedblockchain/notify-slack
     environment:
       - WEBHOOK
       - MESSAGE=Test from docker compose!
