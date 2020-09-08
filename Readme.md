@@ -17,10 +17,18 @@ Simple container to post a slack webhook message
 docker run makevoid/notify-slack -e WEBHOOK=".../.../..." -e MESSAGE="Deployment in $ENV completed"
 ```
 
+
 ### Run via Compose:
 
 (uses the default message)
 
 ```sh
 WEBHOOK=".../.../..." docker-compose up --build
+```
+
+
+### Building and pushing the image
+
+```sh
+docker-compose build && docker-compose push
 ```
